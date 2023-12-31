@@ -9,9 +9,9 @@ SkyQuest is just an experimental static website project dedicated to astronomy, 
 
 2. **Discover Page (`discover.html`):**
    - Navigation links to different sections of the website.
-  
-3. **Constellation Guide ('constellations.html'):**
-   - Listing facts about some 12 constellations known.
+
+3. **Constellation Guide (`constellations.html`):**
+   - Listing facts about 12 known constellations.
 
 4. **Celestial Event Calendar (`celestial_event_calendar.html`):**
    - Dynamic monthly calendar displaying celestial events.
@@ -34,10 +34,14 @@ SkyQuest is just an experimental static website project dedicated to astronomy, 
    - Linked to the Celestial Event Calendar for dynamic display.
 
 ## Features
-- Constellation guide
+
+- Constellation guide.
 - Dynamic Celestial Event Calendar.
 - Night sky photography gallery with user uploads.
 - Stargazing and night sky photography tips.
 
-## Assets used 
- - gifs ,jpg images ,google fonts
+## Assets Used
+
+- GIFs
+- JPG images
+- Google Fonts
