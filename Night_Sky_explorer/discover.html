@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | SkyQuest</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('constelbg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Adjust the gap as needed */
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* Transparent white background for the card */
+            width: 300px; /* Adjust the card width as needed */
+            border-radius: 10px; /* Rounded corners for the card */
+            overflow: hidden; /* Ensure the card does not overflow its container */
+            text-decoration: none; /* Remove underline for the link */
+            color: #000; /* Set the text color */
+        }
+
+        .card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow on hover */
+        }
+
+        .card__header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card__image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 2px solid rgba(173, 216, 230, 0.8); /* Transparent sky blue neon outline */
+        }
+
+        .card__body {
+            padding: 20px; /* Padding for the text below the images */
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #3498db; /* Set the background color for the tag */
+            color: #fff; /* Set the text color for the tag */
+            margin-bottom: 10px; /* Adjust the margin as needed */
+        }
+
+        h4 {
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Constellation Guide Card -->
+    <a href="constellation.html" class="card">
+        <div class="card__header">
+            <img src="const.webp" alt="Constellation Guide" class="card__image">
+        </div>
+        <div class="card__body">
+            <span class="tag tag-blue">Constellation Guide</span>
+            <h4>Explore the Stars</h4>
+            <p>Discover the constellations and their stories.</p>
+        </div>
+        <!-- Add card footer as needed -->
+    </a>
+
+    <!-- Night Sky Photography Card -->
+    <a href="night_sky_photography.html" class="card">
+        <div class="card__header">
+            <img src="night.webp" alt="Night Sky Photography" class="card__image">
+        </div>
+        <div class="card__body">
+            <span class="tag tag-brown">Night Sky Photography</span>
+            <h4>Capture the Night</h4>
+            <p>Get inspired by stunning night sky photography.</p>
+        </div>
+        <!-- Add card footer as needed -->
+    </a>
+
+    <!-- Celestial Event Calendar Card -->
+    <a href="celestial_event_calendar.html" class="card">
+        <div class="card__header">
+            <img src="celestial.webp" alt="Celestial Event Calendar" class="card__image">
+        </div>
+        <div class="card__body">
+            <span class="tag tag-red">Celestial Event Calendar</span>
+            <h4>Plan Your Observations</h4>
+            <p>Stay updated on upcoming celestial events.</p>
+        </div>
+        <!-- Add card footer as needed -->
+    </a>
+
+    <!-- Stargazing Tips Card -->
+    <a href="stargazing_tips.html" class="card">
+        <div class="card__header">
+            <img src="gaze.webp" alt="Stargazing Tips" class="card__image">
+        </div>
+        <div class="card__body">
+            <span class="tag tag-green">Stargazing Tips</span>
+            <h4>Enhance Your Experience</h4>
+            <p>Learn useful tips for a better stargazing experience.</p>
+        </div>
+        <!-- Add card footer as needed -->
+    </a>
+</div>
+
+</body>
+</html>

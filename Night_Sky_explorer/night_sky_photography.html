@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Sky Photography</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6e6fa; /* Light purple background */
+            text-align: center;
+            margin: 20px;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .uploaded-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            border: 4px solid #fff; /* Thick white border */
+            margin: 5px; /* Adjust the margin as needed */
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            background-color: #000; /* Black background for the button */
+            color: #fff; /* White text color */
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Night Sky Photography Gallery</h1>
+
+<label for="fileInput">Upload an Image</label>
+<input type="file" id="fileInput" accept="image/*" onchange="handleFileSelect(event)">
+
+<div id="gallery"></div>
+
+<script>
+    function handleFileSelect(event) {
+        const fileInput = event.target;
+        const files = fileInput.files;
+
+        for (const file of files) {
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const imageUrl = e.target.result;
+                    displayImage(imageUrl);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Clear the input to allow uploading the same file again
+        fileInput.value = null;
+    }
+
+    function displayImage(imageUrl) {
+        const gallery = document.getElementById('gallery');
+        const imageElement = document.createElement('img');
+        imageElement.src = imageUrl;
+        imageElement.classList.add('uploaded-image');
+        gallery.appendChild(imageElement);
+    }
+</script>
+
+</body>
+</html>

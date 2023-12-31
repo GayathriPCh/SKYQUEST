@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.bgimg {
+    background-image: url('gifbg.gif'); /* Update this line with the correct file path */
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10em; /* Adjust the font size as needed */
+    letter-spacing: 20px; /* Adjust the letter-spacing as needed */
+    font-weight: 1; /* Adjust the font weight for a really thin font */
+    text-transform: uppercase; /* Convert to uppercase */
+    margin-bottom: 20px;
+}
+
+.explore-button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ddd;
+}
+
+.card__image {
+    outline: 2px solid rgba(173, 216, 230, 0.8); /* Transparent sky blue neon outline */
+}
