@@ -5,7 +5,7 @@ body {
 }
 
 .bgimg {
-    background-image: url('gifbg.gif'); /* Update this line with the correct file path */
+    background-image: url('starg.gif'); /* Update this line with the correct file path */
     min-height: 100vh;
     background-position: center;
     background-size: cover;
